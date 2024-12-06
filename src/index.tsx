@@ -436,7 +436,7 @@ class ReactQuill extends React.Component<ReactQuillProps, ReactQuillState> {
     if (!this.editingArea) {
       throw new Error('Instantiating on missing editing area');
     }
-    const element = ReactDOM.findDOMNode(this.editingArea);
+    const element = this.editingArea;
     if (!element) {
       throw new Error('Cannot find element for editing area');
     }
